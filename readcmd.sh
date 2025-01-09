@@ -8,6 +8,6 @@ echo "please enter password"
 
 read PASSWORD
 
-The above user name and password below
+#The above user name and password below
 echo "$USERNAME"
 echo "$PASSWORD"
