@@ -8,3 +8,5 @@ echo "movie is ${movies[0]}"
 echo "movie is ${movies[1]}" 
 echo "movie is ${movies[2]}"
 echo "movie is ${movies[3]}"
+
+echo "all movies are ${movies[@]}"
