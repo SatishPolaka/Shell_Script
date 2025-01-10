@@ -17,5 +17,6 @@ echo "hostname is $HOSTNAME"
 echo "random number is $RANDOM"
 echo "current bash version is $BASH_VERSION"
 echo "current bash pid is $BASHPID"
-ech0 "previous command status is $PIPESTATUS"
+sleep 10 &
+
 echo "process id of last background command is $!"
