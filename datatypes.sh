@@ -5,7 +5,7 @@ n2=$2
 
 Timestamp=$(date)
 
-echo"Script executed at $Timestamp"
+echo "Script executed at $Timestamp"
 
 sum=$((n1+n2))
 

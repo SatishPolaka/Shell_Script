@@ -1,4 +1,4 @@
-#!/bib/bash
+#!/bin/bash
 
 echo "A:: Hi B"
 echo "B:: Hello A, How are you?"

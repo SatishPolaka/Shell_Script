@@ -1,4 +1,4 @@
-#!/bib/bash
+#! /bin/bash
 
 person1=satish
 person2=gopi
