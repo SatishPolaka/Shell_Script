@@ -11,6 +11,7 @@ fi
 dnf list installed mysql
 if [ $? -ne 0 ]
 then
+echo "installing mysql...."
 dnf install mysql -y
 if [ $? -ne 0 ]
     then
