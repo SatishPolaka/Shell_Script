@@ -8,4 +8,32 @@ then
     exit 1
 fi
 
+dnf list installed mysl
+if [ $? -ne 0 ]
+then 
+    echo "mysq is ... not installed"
+    dnf install mysql -y
+else
+    echo "mysl is already installed"
+fi
+
 dnf install mysql -y
+
+if [ $? -ne 0 ]
+then
+    echo "installing mysl ... failed"
+    exit 1
+else
+    echo "installing mysl ... sucess"
+fi
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+then
+    echo "installing git ... failed"
+    exit 1
+else
+    echo "installing git ... sucess"
+fi
+
