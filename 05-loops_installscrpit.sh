@@ -14,10 +14,20 @@ N="\e[0m"
 Y="\e[33m"
 
 #logs
+
 Log_Folder="/var/log/shell_script"
 Log_File=$( echo $0 | cut -d "." -f1 ) 
 TimeStamp=$(date "+%Y-%m-%d_%H-%M-%S")
 Log_File_Name="$Log_Folder/$Log_File-$TimeStamp.log"
+
+if [ ! -d "$Log_Folder" ]
+then
+    echo "File doesn't exist. Creating now"
+    mkdir ./$Log_Folder
+    echo "File created"
+else
+    echo "File exists"
+fi
 
 
 VALIDATE(){
