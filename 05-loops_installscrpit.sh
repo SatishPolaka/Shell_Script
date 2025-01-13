@@ -21,7 +21,7 @@ Log_Folder="/var/log/shell_script"
 if [ ! -d "$Log_Folder" ]
 then
     echo "File doesn't exist. Creating now"
-    mkdir .$Log_Folder
+    mkdir $Log_Folder
     echo "File created"
 else
     echo "File exists"
