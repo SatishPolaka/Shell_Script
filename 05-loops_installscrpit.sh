@@ -16,9 +16,7 @@ Y="\e[33m"
 #logs
 
 Log_Folder="/var/log/shell_script"
-Log_File=$( echo $0 | cut -d "." -f1 ) 
-TimeStamp=$(date "+%Y-%m-%d_%H-%M-%S")
-Log_File_Name="$Log_Folder/$Log_File-$TimeStamp.log"
+
 
 if [ ! -d "$Log_Folder" ]
 then
@@ -28,6 +26,10 @@ then
 else
     echo "File exists"
 fi
+
+Log_File=$( echo $0 | cut -d "." -f1 ) 
+TimeStamp=$(date "+%Y-%m-%d_%H-%M-%S")
+Log_File_Name="$Log_Folder/$Log_File-$TimeStamp.log"
 
 
 VALIDATE(){
